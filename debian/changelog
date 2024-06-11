@@ -1,3 +1,63 @@
+python-idna (3.6-2.1) unstable; urgency=high
+
+  * Non-maintainer upload.
+  * Fix CVE-2024-3651: Specially crafted inputs to idna.encode() can consume
+    significant resources, which may lead to denial of service.
+    (Closes: #1069127)
+
+ -- Guilhem Moulin <guilhem@debian.org>  Thu, 30 May 2024 14:55:00 +0200
+
+python-idna (3.6-2) unstable; urgency=medium
+
+  * Removed useless python3-poetry-core b-depends.
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 12 Feb 2024 17:44:12 +0100
+
+python-idna (3.6-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add build-depends on flit, pybuild-plugin-pyproject and python3-poetry-core
+    as upstream switched to pyproject.
+  * Do not cd to temp folder when running autopkgtest and set PYTHONPATH.
+  * Add patch to fix test import.
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 12 Feb 2024 15:56:58 +0100
+
+python-idna (3.3-2) unstable; urgency=medium
+
+  * Team upload.
+  * Update standards version to 4.6.1, no changes needed.
+  * Remove retired uploader.
+
+ -- Bastian Germann <bage@debian.org>  Thu, 13 Jul 2023 15:54:23 +0200
+
+python-idna (3.3-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 16 Feb 2022 12:45:05 +0100
+
+python-idna (3.2-2) unstable; urgency=medium
+
+  * Uploading to unstable.
+  * Add myself as uploader.
+
+ -- Thomas Goirand <zigo@debian.org>  Thu, 23 Dec 2021 15:26:29 +0100
+
+python-idna (3.2-1) experimental; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Thomas Goirand ]
+  * Team upload.
+  * New upstream release.
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 25 Aug 2021 11:06:25 +0200
+
 python-idna (2.10-1) unstable; urgency=medium
 
   * Team upload.
